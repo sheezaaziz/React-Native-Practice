@@ -1,0 +1,51 @@
+import React from 'react';
+import { StyleSheet, ImageBackground, View, Image, Text } from 'react-native';
+
+import colors from "../config/colors";
+
+function WelcomeScreen(props) {
+  return (
+    <ImageBackground
+      source={require('../assets/background.jpg')}
+      style={styles.backgroundContainer}
+    >
+      <View style={styles.logoContainer}>
+        <Image source={require('../assets/logo-red.png')} style={styles.logo}/>
+        <Text>Sell what you don't need</Text>
+      </View>
+      <View style={styles.loginBtn}></View>
+      <View style={styles.registerBtn}></View>
+    </ImageBackground>
+  );
+}
+
+const styles = StyleSheet.create({
+  backgroundContainer: {
+    // flex: 1,
+    width: "100%",
+    height: "100%",
+    justifyContent: 'flex-end',
+    alignItems: "center",
+  },
+  loginBtn: {
+    width: "100%",
+    height: 70,
+    backgroundColor: colors.primary,
+  },
+  registerBtn: {
+    width: "100%",
+    height: 70,
+    backgroundColor: colors.secondary,
+  },
+  logo: {
+    width: 100,
+    height: 100,
+  },
+  logoContainer: {
+    position: "absolute",
+    top: 70,
+    alignItems: "center",
+  }
+})
+
+export default WelcomeScreen;
