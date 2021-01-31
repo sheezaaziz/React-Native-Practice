@@ -22,13 +22,4 @@ function Icon({
   );
 }
 
-// const styles = StyleSheet.create({
-//   container: {
-//     width: {size},
-//     height: {size},
-//     borderRadius: {size} / 2,
-//     backgroundColor: backgroundColor,
-//   }
-// })
-
 export default Icon;

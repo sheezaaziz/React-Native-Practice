@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 18,
     fontFamily: 'Avenir',
-    textTransform: "capitalize",
+    // textTransform: "capitalize",
     textAlign: "left",
     lineHeight: 30,
   }
