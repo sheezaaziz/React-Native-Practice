@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import React, { useState } from 'react';
+import { View, StyleSheet, TextInput } from 'react-native';
 
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
@@ -14,7 +14,14 @@ import ListItem from './app/components/ListItem/ListItem';
 
 export default function App() {
   return (
-    <ListingsScreen/>
+    <Screen>
+      <TextInput
+        placeholder="First Name"
+        style={{
+          borderBottomColor: "#ccc",
+          borderBottomWidth: 1,
+        }}/>
+    </Screen>
   );
 }
 
