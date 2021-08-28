@@ -13,9 +13,12 @@ import Icon from './app/components/Icon/Icon';
 import ListItem from './app/components/ListItem/ListItem';
 
 export default function App() {
+  const [firstName, setFirstName] = useState('');
+
   return (
     <Screen>
       <TextInput
+        onChangeText={(text) => setFirstName(text)}
         placeholder="First Name"
         style={{
           borderBottomColor: "#ccc",
